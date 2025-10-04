@@ -14,13 +14,13 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-.champions {
+.athletes {
   color: #5c5c5c;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
-body .champions thead {
+body .athletes thead {
   font-family: 'Nunito', sans-serif;
   font-weight: 100;
 }
@@ -153,48 +153,48 @@ body .champions thead {
 }
 
 
-.b-champions {
+.b-athletes {
   width: 100%;
   padding: 40px 0;
 }
 
-.champions {
+.athletes {
   width: 940px;
   margin: auto;
 }
 
-.champions table {
+.athletes table {
   background: #fff;
   width: 100%;
   border: 1px solid #ebebeb;
   border-collapse: collapse;
 }
 
-.champions table th,
-.champions table td {
+.athletes table th,
+.athletes table td {
   padding: 20px;
   text-align: center;
   border-right: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 }
 
-.champions table th:last-child,
-.champions table td:last-child {
+.athletes table th:last-child,
+.athletes table td:last-child {
   border-right: none;
 }
 
 
-.champions table tr:last-child td {
+.athletes table tr:last-child td {
   border-bottom: none;
 }
 
-.champion-photo {
+.athlete-photo {
   width: 150px;
   height: 220px;
   background: #5c5c5c;
 }
 
-.champions table .photo-td {
+.athletes table .photo-td {
   width: 150px;
   padding: 0;
 }
@@ -270,7 +270,7 @@ body .champions thead {
     border-bottom: 2px solid #d6d6d6;
   }
 
-  .champions{
+  .athletes{
     width: 90%;
     overflow: scroll;
   }

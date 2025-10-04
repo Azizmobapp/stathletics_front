@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="b-champions">
-      <div class="champions">
+    <div class="b-athletes">
+      <div class="athletes">
         <table>
           <thead>
             <tr>
               <th>ФОТО</th>
-              <th>АТЛЕТ</th>
+              <th>ФИО</th>
               <th>ГОРОД</th>
               <th>
                 <NuxtImg class="table-medal" src="/images/gold.png" alt="Золото" />
@@ -21,14 +21,14 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="photo-td"><div class="champion-photo"></div></td>
-              <td>ИВАН ИВАНОВ ИВАНЫЧ</td>
-              <td>БЕЛГОРОД</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>3</td>
+            <tr v-for="athlete in athletesData">
+              <td class="photo-td"><div class="athlete-photo"></div></td>
+              <td>{{ athlete.name }}</td>
+              <td>{{ athlete.city }}</td>
+              <td>{{ athlete.gold }}</td>
+              <td>{{ athlete.silver }}</td>
+              <td>{{ athlete.bronze }}</td>
+              <td>{{ athlete.total }}</td>
             </tr>
           </tbody>
         </table>
@@ -36,7 +36,14 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
+<script setup>
+
+
+
+import {useFetch} from "nuxt/app";
+
+const {data: athletesData} = useFetch('http://127.0.0.1:8000/api/athletes')
+
 
 definePageMeta({
   layout: 'client'

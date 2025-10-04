@@ -7,7 +7,7 @@
           <NuxtLink :to="{name: 'events'}">Мероприятия</NuxtLink>
         </div>
         <div>
-          <NuxtLink :to="{name: 'champions'}">Чемпионы</NuxtLink>
+          <NuxtLink :to="{name: 'athletes'}">Зал славы</NuxtLink>
         </div>
         <div>
           <a href="#">Таблица элементов</a>

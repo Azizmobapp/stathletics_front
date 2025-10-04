@@ -1,34 +1,32 @@
 <template>
   <div>
-    <div class="b-event-item">
-      <div class="event-item">
+    <div v-for="(event, index) in eventsData" class="b-event-item">
+      <div v-if="index % 2 === 0" class="event-item">
         <div class="b-event-meta">
           <div>
             <h3 class="event-title">
-              РЕКОРДЫ ССА ОНЛАЙН
+              {{ event.title }}
             </h3>
           </div>
         </div>
         <div class="b-event-date">
-          <p class="first">2026</p>
+          <p :class="event.is_future ? 'first' : ''">{{ event.year }}</p>
         </div>
         <div class="b-event-image">
-          <NuxtImg src="/images/event1.jpg" alt="Онлайн Рекорды 2026" />
+          <NuxtImg :src="event.image_url" :alt="event.title" />
         </div>
       </div>
-    </div>
-    <div class="b-event-item">
-      <div class="event-item">
+      <div v-else class="event-item">
         <div class="b-event-image">
-          <NuxtImg src="/images/event0.jpg" alt="Онлайн Рекорды 2026" />
+          <NuxtImg :src="event.image_url" :alt="event.title" />
         </div>
         <div class="b-event-date">
-          <p>2025</p>
+          <p :class="event.is_future ? 'first' : ''">{{ event.year }}</p>
         </div>
         <div class="b-event-meta">
           <div>
             <h3 class="event-title">
-              ЧЕМПИОНАТ РОССИИ ОНЛАЙН ВСЕ ПРОТИВ ВСЕХ
+              {{ event.title }}
             </h3>
           </div>
         </div>
@@ -36,7 +34,11 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
+<script setup>
+
+import {useFetch} from "nuxt/app";
+
+const {data: eventsData} = useFetch('http://127.0.0.1:8000/api/events')
 
 definePageMeta({
   layout: 'client'

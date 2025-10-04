@@ -6,7 +6,7 @@
         <NuxtImg class="logo-min" src="/images/logo-min.png" alt="Статико-Силовая атлетика" />
       </NuxtLink>
       <NuxtLink exact-active-class="active-link" class="header-link" :to="{name: 'events'}">Мероприятия</NuxtLink>
-      <NuxtLink exact-active-class="active-link" class="header-link" :to="{name: 'champions'}">Чемпионы</NuxtLink>
+      <NuxtLink exact-active-class="active-link" class="header-link" :to="{name: 'athletes'}">Зал славы</NuxtLink>
     </header>
   </section>
   <section class="b-article">

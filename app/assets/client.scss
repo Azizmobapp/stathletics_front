@@ -1,0 +1,277 @@
+
+a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+.b-event-date {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.champions {
+  color: #5c5c5c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+body .champions thead {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+}
+
+
+.client {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.b-header {
+  width: 100%;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.header {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.b-article {
+  background: #f7f7f7;
+  width: 100%;
+  flex: 1;
+}
+
+.b-footer {
+  height: 100px;
+  background: #303030;
+}
+
+.header-link-logo {
+  padding-right: 20px;
+}
+
+.header-link {
+  display: block;
+  padding: 24px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #5c5c5c;
+  vertical-align: center;
+}
+
+.logo-min {
+  width: 48px;
+  height: 48px;
+  display: block;
+  vertical-align: center;
+}
+
+.b-event-item {
+  padding: 40px 0;
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+
+.b-event-item:nth-child(2n) {
+  background: #ececec;
+  text-align: left;
+}
+
+//.b-event-item:nth-child(even) .b-event-meta {
+//  background: linear-gradient(to right, rgb(207, 111, 255), transparent);
+//}
+//.b-event-item:nth-child(odd) .b-event-meta {
+//  background: linear-gradient(to left, rgb(240, 76, 181), transparent);
+//}
+
+
+.event-item {
+  display: flex;
+  width: 940px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.event-title {
+  font-size: 32px;
+  line-height: 62px;
+  color: #494949;
+}
+
+.b-event-meta {
+  width: 50%;
+}
+
+.active-link {
+  background: #3b3b3b;
+  color: #fff;
+}
+
+.b-event-meta p {
+  font-size: 30px;
+  color: #5c5c5c;
+  margin-bottom: 20px;
+}
+
+.b-event-image {
+  width: 50%;
+  background: #5c5c5c;
+}
+
+.b-event-image img {
+  width: 100%;
+}
+
+.b-event-date p {
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #b94aea;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.b-event-date .first {
+
+  background: #f96675;
+}
+
+
+.b-champions {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.champions {
+  width: 940px;
+  margin: auto;
+}
+
+.champions table {
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-collapse: collapse;
+}
+
+.champions table th,
+.champions table td {
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.champions table th:last-child,
+.champions table td:last-child {
+  border-right: none;
+}
+
+
+.champions table tr:last-child td {
+  border-bottom: none;
+}
+
+.champion-photo {
+  width: 150px;
+  height: 220px;
+  background: #5c5c5c;
+}
+
+.champions table .photo-td {
+  width: 150px;
+  padding: 0;
+}
+
+
+@media (max-width: 500px) {
+  .header {
+    width: 100%;
+    display: block;
+  }
+
+  .header a {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    display: block;
+    border-bottom: 1px solid #c9c9c9;
+  }
+
+  .header .header-link-logo {
+    padding: 0;
+  }
+  .header-link-logo img {
+    margin: auto;
+    padding: 10px 0;
+  }
+
+
+  .event-item {
+    width: 100%;
+    display: block;
+  }
+
+  .event-item .b-event-image {
+    width: 90%;
+    margin: auto;
+  }
+
+
+  .event-title {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .b-event-meta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .b-event-date p {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background: #b94aea;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+  }
+
+  .b-event-date{
+    margin: 20px 0;
+  }
+
+  .b-event-item{
+    border-bottom: 2px solid #b5b5b5;
+  }
+
+  .b-event-item:nth-child(2n) {
+    background: #e3e3e3;
+    text-align: left;
+    border-bottom: 2px solid #d6d6d6;
+  }
+
+  .champions{
+    width: 90%;
+    overflow: scroll;
+  }
+}

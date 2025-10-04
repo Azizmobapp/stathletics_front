@@ -1,0 +1,102 @@
+
+body{
+  margin: 0;
+}
+
+.main{
+  display: flex;
+  flex-direction: column; /* вертикально */
+  height: 100vh; /* весь экран */
+}
+
+.fullscreen-bg{
+  width: 100vw;              /* ширина блока = ширине окна */
+  height: 100vh;             /* высота блока = высоте окна */
+  background-image: url('/images/main.jpg'); /* путь к картинке */
+  background-size: cover;    /* изображение масштабируется по всей области */
+  background-position: center; /* центрирование картинки */
+  background-repeat: no-repeat; /* не повторять */
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.b-main-article{
+  flex-grow: 1;
+}
+
+.main-article{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.b-logo{
+  text-align: center;
+}
+
+.b-logo img{
+  width: 600px;
+}
+.main-title{
+  font-size: 50px;
+  color: #9d9d9d;
+}
+
+.main-links{
+  margin-right: 100px;
+}
+
+.main-links div{
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.main-links a{
+  font-size: 24px;
+  color: #ececec;
+  text-decoration: none;
+}
+
+
+@media (max-width: 500px) {
+
+  .main{
+    display: block;
+  }
+
+  .b-logo img{
+    width: 90%;
+  }
+
+  .main-article{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .main-links{
+    margin-right: 0;
+  }
+
+  .main-links div{
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #999999;
+    text-align: center;
+  }
+
+  .main-title{
+    font-size: 30px;
+
+  }
+
+  .b-logo{
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* элементы идут сверху вниз */
+    justify-content: center; /* центрируем «стопку» по вертикали родителя */
+    align-items: center; /* по желанию, центрируем по горизонтали */
+  }
+}

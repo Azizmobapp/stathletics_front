@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'node-server'
   },
+  runtimeConfig: {
+    public: {
+      apiBase: import.meta.env.API_BASE_URL || '/api'
+    }
+  },
   modules: ['@nuxtjs/google-fonts', '@nuxt/image'],
   css: ['@/assets/main.scss', '@/assets/client.scss'],
   app: {

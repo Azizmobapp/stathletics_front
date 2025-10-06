@@ -42,7 +42,7 @@
 
 import {useFetch} from "nuxt/app";
 
-const {data: athletesData} = useFetch('http://127.0.0.1:8000/api/athletes')
+const {data: athletesData} = useFetch(`${config.public.apiBase}/athletes`)
 
 
 definePageMeta({

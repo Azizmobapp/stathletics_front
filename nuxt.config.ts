@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   ssr: true,
+  devServer: {
+    host: '0.0.0.0' // слушает и IPv4, и IPv6
+  },
   nitro: {
     preset: 'node-server'
   },

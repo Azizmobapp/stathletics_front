@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="b-logo">
-        <NuxtImg src="/images/main-logo.png" alt="Онлайн Рекорды 2026" />
+        <img src="/images/main-logo.png" alt="Онлайн Рекорды 2026" />
         <h1 class="main-title">
           СТАТИКО-СИЛОВАЯ АТЛЕТИКА
         </h1>

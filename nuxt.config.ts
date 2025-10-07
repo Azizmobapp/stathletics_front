@@ -2,16 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  ssr: true,
-  devServer: {
-    host: '0.0.0.0',  // слушаем IPv4 на всех интерфейсах
-    port: 3000
-  },
-  nitro: {
-    preset: 'node-server'
-  },
+  ssr: false, // отключаем SSR
   runtimeConfig: {
-
     public: {
       APP_ENV: process.env.APP_ENV,
       API_BASE_URL: process.env.API_BASE_URL,

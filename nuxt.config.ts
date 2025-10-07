@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: import.meta.env.API_BASE_URL || '/api'
+      apiBase: import.meta.env.API_BASE_URL || 'http://127.0.0.1:8080/api'
     }
   },
   modules: ['@nuxtjs/google-fonts', '@nuxt/image'],

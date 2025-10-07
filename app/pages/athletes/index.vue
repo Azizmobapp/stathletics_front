@@ -38,7 +38,7 @@
 </template>
 <script setup>
 
-
+const config = useRuntimeConfig()
 
 import {useFetch} from "nuxt/app";
 

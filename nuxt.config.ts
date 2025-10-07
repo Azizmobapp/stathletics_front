@@ -7,9 +7,11 @@ export default defineNuxtConfig({
     preset: 'node-server'
   },
   runtimeConfig: {
+
     public: {
-      apiBase: import.meta.env.API_BASE_URL || 'http://127.0.0.1:8080/api'
-    }
+      APP_ENV: process.env.APP_ENV,
+      API_BASE_URL: process.env.API_BASE_URL,
+    },
   },
   modules: ['@nuxtjs/google-fonts', '@nuxt/image'],
   css: ['@/assets/main.scss', '@/assets/client.scss'],

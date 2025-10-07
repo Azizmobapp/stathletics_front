@@ -36,10 +36,9 @@
 </template>
 <script setup>
 
-import {useFetch} from "nuxt/app";
-const config = useRuntimeConfig()
-const nuxtApp = useNuxtApp()
-const {data: eventsData} = await useFetch(`${nuxtApp.ssrContext  ? config.public.apiBase : '/api'}/events`)
+
+const {$apiFetch} = useNuxtApp()
+const {data: eventsData} = await $apiFetch('/events')
 
 definePageMeta({
   layout: 'client'

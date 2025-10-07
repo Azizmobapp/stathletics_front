@@ -39,10 +39,10 @@
 <script setup>
 
 const config = useRuntimeConfig()
-
+const nuxtApp = useNuxtApp()
 import {useFetch} from "nuxt/app";
 
-const {data: athletesData} = await useFetch(`${config.public.apiBase}/athletes`)
+const {data: athletesData} = await useFetch(`${nuxtApp.ssrContext  ? config.public.apiBase : '/api'}/athletes`)
 
 
 definePageMeta({

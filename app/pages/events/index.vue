@@ -38,7 +38,7 @@
 
 import {useFetch} from "nuxt/app";
 const config = useRuntimeConfig()
-const {data: eventsData} = useFetch(`${config.public.apiBase}/events`)
+const {data: eventsData} = await useFetch(`${config.public.apiBase}/events`)
 
 definePageMeta({
   layout: 'client'

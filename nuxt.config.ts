@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   devServer: {
-    host: '0.0.0.0' // слушает и IPv4, и IPv6
+    host: '0.0.0.0',  // слушаем IPv4 на всех интерфейсах
+    port: 3000
   },
   nitro: {
     preset: 'node-server'

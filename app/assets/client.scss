@@ -199,7 +199,41 @@ body .athletes thead {
   padding: 0;
 }
 
+.athletes-card-list{
+  display: grid; /* Declares the element as a grid container */
+  grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+  gap: 20px;
+}
 
+.athlete-card{
+  background: #fff;
+  border: 1px solid #ececec;
+  padding: 20px;
+  display: flex;
+  align-items: start;
+}
+.athlete-card-info h3{
+  font-size: 24px;
+  margin: 0;
+}
+
+.athlete-card-info p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.athlete-card-medals{
+  display: flex;
+  justify-content: space-between;
+}
+
+.athlete-card-medals p{
+  text-align: center;
+}
+
+.athlete-card .photo-div{
+  margin-right: 20px;
+}
 @media (max-width: 500px) {
   .header {
     width: 100%;
@@ -273,5 +307,11 @@ body .athletes thead {
   .athletes{
     width: 90%;
     overflow: scroll;
+  }
+
+  .athletes-card-list{
+    display: grid; /* Declares the element as a grid container */
+    grid-template-columns: 1fr; /* Creates two equal-width columns */
+    gap: 20px;
   }
 }

@@ -10,7 +10,7 @@
           <NuxtLink :to="{name: 'athletes'}">Зал славы</NuxtLink>
         </div>
         <div>
-          <a href="#">Таблица элементов</a>
+          <NuxtLink :to="{name: 'elements'}">Таблица элементов</NuxtLink>
         </div>
         <div>
           <a href="#">Разряды</a>

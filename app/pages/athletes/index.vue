@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="b-athletes">
-      <div class="athletes athletes-card-list">
+    <div class="b-section">
+      <div class="section athletes-card-list">
         <div v-for="athlete in athletesData" class="athlete-card">
           <div class="photo-div">
             <div class="athlete-photo"></div>

@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Nunito: [100, 300, 400, 700],
-      Montserrat: [100, 300, 400]
+      Montserrat: [100, 300, 400, 500]
     },
     subsets: ['cyrillic'] // важно, иначе русские буквы могут быть без поддержки
   }

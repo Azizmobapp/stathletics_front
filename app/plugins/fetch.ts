@@ -14,7 +14,7 @@ export default defineNuxtPlugin(() => {
                         : (nuxtApp.ssrContext ? config.public.API_BASE_URL : '/api')
 
                 const fullUrl = `${base}${url}`
-
+                console.log(options);
                 // Проксируем вызов оригинального useFetch
                 return await useFetch(fullUrl, options)
             }

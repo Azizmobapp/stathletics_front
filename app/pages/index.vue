@@ -13,7 +13,7 @@
           <NuxtLink :to="{name: 'elements'}">Таблица элементов</NuxtLink>
         </div>
         <div>
-          <a href="#">Разряды</a>
+          <NuxtLink :to="{name: 'rates'}">Рейтинг</NuxtLink>
         </div>
       </div>
       <div class="b-logo">

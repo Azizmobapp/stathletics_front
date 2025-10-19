@@ -7,6 +7,7 @@
       </NuxtLink>
       <NuxtLink exact-active-class="active-link" class="header-link" :to="{name: 'events'}">Мероприятия</NuxtLink>
       <NuxtLink exact-active-class="active-link" class="header-link" :to="{name: 'athletes'}">Зал славы</NuxtLink>
+      <NuxtLink exact-active-class="active-link" class="header-link" :to="{name: 'rates'}">Рейтинг</NuxtLink>
       <NuxtLink exact-active-class="active-link" class="header-link" :to="{name: 'elements'}">Таблица элементов</NuxtLink>
     </header>
   </section>

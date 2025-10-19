@@ -4,7 +4,10 @@
       <div class="section athletes-card-list">
         <div v-for="athlete in athletesData" class="athlete-card">
           <div class="photo-div">
-            <div class="athlete-photo"></div>
+            <div class="athlete-photo">
+              <img :src="athlete.img_url" :alt="athlete.name"/>
+
+            </div>
           </div>
           <div>
             <div class="athlete-card-info">

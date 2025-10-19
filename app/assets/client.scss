@@ -197,6 +197,10 @@ body .section thead {
   background: #5c5c5c;
 }
 
+.athlete-photo img{
+  width: 100%;
+}
+
 .section table .photo-td {
   width: 150px;
   padding: 0;
@@ -229,10 +233,15 @@ body .section thead {
 .athlete-card-medals {
   display: flex;
   justify-content: space-between;
+  width: 150px;
 }
 
 .athlete-card-medals p {
   text-align: center;
+}
+
+.athlete-card-medals img{
+  width: 30px;
 }
 
 .athlete-card .photo-div {

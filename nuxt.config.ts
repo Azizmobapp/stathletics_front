@@ -1,25 +1,34 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-  ssr: false, // отключаем SSR
-  runtimeConfig: {
-    public: {
-      APP_ENV: process.env.APP_ENV,
-      API_BASE_URL: process.env.API_BASE_URL,
+    compatibilityDate: '2025-07-15',
+    devtools: {enabled: true},
+    ssr: false, // отключаем SSR
+    runtimeConfig: {
+        public: {
+            APP_ENV: process.env.APP_ENV,
+            API_BASE_URL: process.env.API_BASE_URL,
+        },
     },
-  },
-  modules: ['@nuxtjs/google-fonts', '@nuxt/image'],
-  css: ['@/assets/main.scss', '@/assets/client.scss'],
-  app: {
-      pageTransition: {name: 'page', mode: 'out-in', appear: true},
-      layoutTransition: { name: 'layout', mode: 'out-in', appear: true },
-  },
-  googleFonts: {
-    families: {
-      Nunito: [100, 300, 400, 700],
-      Montserrat: [100, 300, 400, 500]
+    modules: ['@nuxtjs/google-fonts', '@nuxt/image'],
+    css: ['@/assets/main.scss', '@/assets/client.scss'],
+    app: {
+        pageTransition: {name: 'page', mode: 'out-in', appear: true},
+        layoutTransition: {name: 'layout', mode: 'out-in', appear: true},
+        head: {
+            link: [
+                {
+                    rel: 'icon',
+                    type: 'image/png',
+                    href: '/favicon.png'
+                }
+            ],
+        }
     },
-    subsets: ['cyrillic'] // важно, иначе русские буквы могут быть без поддержки
-  }
+    googleFonts: {
+        families: {
+            Nunito: [100, 300, 400, 700],
+            Montserrat: [100, 300, 400, 500]
+        },
+        subsets: ['cyrillic'] // важно, иначе русские буквы могут быть без поддержки
+    }
 })

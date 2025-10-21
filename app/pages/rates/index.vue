@@ -17,6 +17,9 @@
               <th>
                 <img class="table-medal" src="/images/bronze.png" alt="Бронза"/>
               </th>
+              <th>
+                <img class="table-medal" src="/images/record.png" alt="Рекорд"/>
+              </th>
               <th>Рейтинг</th>
             </tr>
           </thead>
@@ -28,6 +31,7 @@
             <td>{{ athlete.gold }}</td>
             <td>{{ athlete.silver }}</td>
             <td>{{ athlete.bronze }}</td>
+            <td>{{ athlete.record }}</td>
             <td>{{ athlete.rate }}</td>
           </tr>
           </tbody>

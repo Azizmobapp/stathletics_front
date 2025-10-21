@@ -33,6 +33,12 @@
                 </div>
                 <p>{{ athlete.bronze }}</p>
               </div>
+              <div>
+                <div>
+                  <img class="table-medal" src="/images/record.png" alt="Рекорды"/>
+                </div>
+                <p>{{ athlete.record }}</p>
+              </div>
             </div>
           </div>
         </div>
